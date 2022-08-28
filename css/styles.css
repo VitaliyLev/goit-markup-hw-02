@@ -1,0 +1,129 @@
+:root {
+--background-color-white: #FFFFFF;
+--background-color-black: #2F303A;
+--background-color: #F5F5F5;
+--background-color-team: #F5F4FA;
+--color-text-black: #212121;
+--color-text-white: #FFFFFF;
+--accent-color-blue:#2196F3;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--color-text-black);
+    
+}
+
+                /* Header */
+                /* Шапка */
+header {
+    background-color: var(--background-color-white);
+}
+
+/* Логотип Header */
+.logo {
+    color: var(--accent-color-blue)
+}
+.logo-header {
+    color: #000000;
+}
+
+/* Навігація сайту*/
+.site-nav .link {
+    color: var(--accent-color-blue);
+}
+.site-nav a {
+    color: var(--color-text-black);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color-blue);
+}
+
+/* Авторизація навігація*/
+.auth-nav a {
+    color: #757575;
+} 
+.auth-nav a:hover,
+.auth-nav a:focus {
+color:var(--accent-color-blue)
+}
+.auth-nav .link {
+    color: var(--accent-color-blue);
+}
+
+
+
+
+                /* Main content */
+
+/* Головна секція, Рішення бізнесу */
+.solutions {
+    background-color: var(--background-color-black);
+    color: var(--color-text-white)
+}
+/*Кнопка */
+.button {
+    color: var(--color-text-white);
+    background-color: var(--accent-color-blue);
+}
+.button :hover,
+.button :focus {
+    color: var(--accent-color-blue);
+}
+
+
+/* Cекція наша команла */
+.section .team {
+    background-color: var(--background-color-team);
+}
+
+
+
+
+/* Кольори всіх заголовків по секціях */
+.section .title {
+    color:var(--color-text-black)
+}
+
+/* Кольори всіх абзаців по секціях */
+.section .paragraph{
+    color: #757575;
+}
+
+
+/* забрав тотечки перед ul списком */
+.list{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+                /* Footer */
+footer{
+    background-color: var(--background-color-black);
+}
+.address-text{
+    color: var(--color-text-white)
+}
+.address-mail{
+    color: #D9D9D9
+}
+.address-phone{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Підвал, Footer */
+
+.logo-footer {
+    color: #FFFFFF;
+}
+
