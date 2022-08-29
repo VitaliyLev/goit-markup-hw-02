@@ -1,5 +1,4 @@
 :root {
---background-color-white: #FFFFFF;
 --background-color-black: #2F303A;
 --background-color: #F5F5F5;
 --background-color-team: #F5F4FA;
@@ -7,6 +6,9 @@
 --color-text-white: #FFFFFF;
 --accent-color-blue:#2196F3;
 --paragraph-color-text:#757575;
+--color-black:#000000;
+--color-white:#ffffff;
+--color-number-phone:rgba(255, 255, 255, 0.6);
 }
 
 
@@ -16,16 +18,15 @@ body {
 
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
-    
+    font-weight: 400;
 }
 
                 /* Header */
-                /* Шапка */
 header {
-    background-color: var(--background-color-white);
+    background-color: var(--color-white);
 }
 
-/* Логотип Header */
+/* Logo Header */
 .logo {
     color: var(--accent-color-blue);
 
@@ -35,11 +36,9 @@ header {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-/* identical to box height */
-
 }
 .logo-header {
-    color: #000000;
+    color:var(--color-black);
 }
 
 /* Навігація сайту*/
@@ -63,10 +62,10 @@ header {
     letter-spacing: 0.02em;
     }
 
-/* Авторизація навігація*/
+/* Авторизація, навігація*/
 .auth-nav .mobil-link {
     text-decoration: none;
-    color: #757575;
+    color: var(--paragraph-color-text);
 
     font-weight: 500;
     font-size: 14px;
@@ -109,6 +108,7 @@ color:var(--accent-color-blue)
 .button {
     color: var(--color-text-white);
     background-color: var(--accent-color-blue);
+    cursor: pointer;
 
     font-family: inherit;
     font-weight: 700;
@@ -123,9 +123,6 @@ color:var(--accent-color-blue)
 .button :focus {
     color: var(--accent-color-blue);
 }
-
-
-
 
 
 
@@ -153,7 +150,6 @@ color:var(--accent-color-blue)
 .features-paragraph {
     color: var(--paragraph-color-text);
 
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -168,16 +164,18 @@ color:var(--accent-color-blue)
 
 
 /* Cекція наша команда*/
-
  .team {
 background-color: var(--background-color-team);
+}
+.card {
+    background-color: var(--color-white);
 }
 .name-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     /* identical to box height */
-    /* text-align: center; центр на картинці */
+    text-align: center;
 }
 
 
@@ -185,11 +183,10 @@ background-color: var(--background-color-team);
 .section-paragraph{
     color: var(--paragraph-color-text);
 
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     /* identical to box height */
-    /* text-align: center; центр на картинці */
+    text-align: center;
 }
 
 
@@ -205,24 +202,22 @@ footer{
     background-color: var(--background-color-black);
 }
 .logo-footer {
-    color: #FFFFFF;
+    color: var(--color-white)
 }
 .address-text{
     color: var(--color-text-white);
     text-decoration: none;
 
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
 .address-mail,
 .address-phone{
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--color-number-phone);
     text-decoration: none;
 
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -232,13 +227,15 @@ footer{
 /* сторінка портфоліо */
 /* кнопки навігації */
 .portfolio .current {
-    color: var(--background-color-white);
+    color: var(--color-white);
     background-color: var(--accent-color-blue);  
 }
 
 .button-filter {
     color: var(--color-text-black);
+    cursor: pointer;
 
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -257,7 +254,6 @@ footer{
     
 }
 .portfolio-paragraph {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
 }
