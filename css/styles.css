@@ -28,6 +28,8 @@ header {
 /* Логотип Header */
 .logo {
     color: var(--accent-color-blue);
+
+    text-decoration: none;
     font-family: Raleway, cursive;
 
     font-weight: 700;
@@ -47,12 +49,14 @@ header {
 
 .site-nav a {
     color: var(--color-text-black);
+    text-decoration: none;
 }
 .site-nav a:hover,
 .site-nav a:focus {
     color: var(--accent-color-blue);
 }
 .site-nav .link {
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -60,8 +64,14 @@ header {
     }
 
 /* Авторизація навігація*/
-.auth-nav a {
+.auth-nav .mobil-link {
+    text-decoration: none;
     color: #757575;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 } 
 .auth-nav a:hover,
 .auth-nav a:focus {
@@ -69,12 +79,12 @@ color:var(--accent-color-blue)
 }
 .auth-nav .link {
     color: var(--accent-color-blue);
+    text-decoration: none;
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
 }
 
 
@@ -157,7 +167,7 @@ color:var(--accent-color-blue)
 }
 
 
-/* Cекція наша команла*/
+/* Cекція наша команда*/
 
  .team {
 background-color: var(--background-color-team);
@@ -199,15 +209,19 @@ footer{
 }
 .address-text{
     color: var(--color-text-white);
+    text-decoration: none;
 
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 .address-mail,
 .address-phone{
     color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -248,8 +262,4 @@ line-height: 1.71;
     line-height: 1.88;
 }
 
-
-
-/* забрати підкреслювання з силок і адресу
-подивтсь о силок і адресу похилий текст присутній */
 
