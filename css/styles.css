@@ -6,12 +6,16 @@
 --color-text-black: #212121;
 --color-text-white: #FFFFFF;
 --accent-color-blue:#2196F3;
+--paragraph-color-text:#757575;
 }
 
 
 body {
     background-color: var(--background-color);
     color: var(--color-text-black);
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
     
 }
 
@@ -23,16 +27,24 @@ header {
 
 /* Логотип Header */
 .logo {
-    color: var(--accent-color-blue)
+    color: var(--accent-color-blue);
+    font-family: Raleway, cursive;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+/* identical to box height */
+
 }
 .logo-header {
     color: #000000;
 }
 
 /* Навігація сайту*/
-.site-nav .link {
+.site-nav .link.current {
     color: var(--accent-color-blue);
 }
+
 .site-nav a {
     color: var(--color-text-black);
 }
@@ -40,6 +52,12 @@ header {
 .site-nav a:focus {
     color: var(--accent-color-blue);
 }
+.site-nav .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    }
 
 /* Авторизація навігація*/
 .auth-nav a {
@@ -51,6 +69,12 @@ color:var(--accent-color-blue)
 }
 .auth-nav .link {
     color: var(--accent-color-blue);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
 }
 
 
@@ -61,12 +85,29 @@ color:var(--accent-color-blue)
 /* Головна секція, Рішення бізнесу */
 .solutions {
     background-color: var(--background-color-black);
-    color: var(--color-text-white)
+    color: var(--color-text-white);
+}
+.solutions-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 /*Кнопка */
 .button {
     color: var(--color-text-white);
     background-color: var(--accent-color-blue);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 .button :hover,
 .button :focus {
@@ -74,22 +115,71 @@ color:var(--accent-color-blue)
 }
 
 
-/* Cекція наша команла */
-.section .team {
-    background-color: var(--background-color-team);
+
+
+
+
+
+                /* Секція featured Особливості */
+/* Hidden title */
+.hidden-title {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
+}
+.features-tetle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.features-paragraph {
+    color: var(--paragraph-color-text);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Секція чим ми займаємось */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
 
 
+/* Cекція наша команла*/
 
-
-/* Кольори всіх заголовків по секціях */
-.section .title {
-    color:var(--color-text-black)
+ .team {
+background-color: var(--background-color-team);
+}
+.name-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    /* identical to box height */
+    /* text-align: center; центр на картинці */
 }
 
-/* Кольори всіх абзаців по секціях */
-.section .paragraph{
-    color: #757575;
+
+/* Кольори абзаців */
+.section-paragraph{
+    color: var(--paragraph-color-text);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    /* identical to box height */
+    /* text-align: center; центр на картинці */
 }
 
 
@@ -100,30 +190,66 @@ color:var(--accent-color-blue)
 
 
 
-
-
-
-
-
-
-
                 /* Footer */
 footer{
     background-color: var(--background-color-black);
 }
-.address-text{
-    color: var(--color-text-white)
-}
-.address-mail{
-    color: #D9D9D9
-}
-.address-phone{
-    color: rgba(255, 255, 255, 0.6);
-}
-
-/* Підвал, Footer */
-
 .logo-footer {
     color: #FFFFFF;
 }
+.address-text{
+    color: var(--color-text-white);
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+}
+.address-mail,
+.address-phone{
+    color: rgba(255, 255, 255, 0.6);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+
+
+/* сторінка портфоліо */
+/* кнопки навігації */
+.portfolio .current {
+    color: var(--background-color-white);
+    background-color: var(--accent-color-blue);  
+}
+
+.button-filter {
+    color: var(--color-text-black);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+.button-filter:hover,
+.button-filter:focus {
+    color: var(--accent-color-blue);
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    
+}
+.portfolio-paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+
+
+/* забрати підкреслювання з силок і адресу
+подивтсь о силок і адресу похилий текст присутній */
 
