@@ -17,8 +17,8 @@ body {
     color: var(--color-text-black);
 
     font-family: Roboto, sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em;
-    font-weight: 400;
 }
 
                 /* Header */
@@ -57,35 +57,23 @@ header {
 .site-nav .link {
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     }
 
 /* Авторизація, навігація*/
-.auth-nav .mobil-link {
-    text-decoration: none;
+.auth-nav .link {
     color: var(--paragraph-color-text);
+    text-decoration: none;
 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 } 
-.auth-nav a:hover,
-.auth-nav a:focus {
+.auth-nav .link:hover,
+.auth-nav .link:focus {
 color:var(--accent-color-blue)
 }
-.auth-nav .link {
-    color: var(--accent-color-blue);
-    text-decoration: none;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
 
 
 
@@ -141,22 +129,20 @@ color:var(--accent-color-blue)
     clip: rect(0 0 0 0); 
     overflow: hidden; 
 }
-.features-tetle {
+.features-title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 .features-paragraph {
     color: var(--paragraph-color-text);
 
-    font-size: 14px;
+    
     line-height: 1.71;
 }
 
 /* Секція чим ми займаємось */
 .section-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -209,7 +195,6 @@ footer{
     text-decoration: none;
 
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
 }
 .address-mail,
@@ -218,8 +203,16 @@ footer{
     text-decoration: none;
 
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
+}
+
+.address-phone:hover,
+.address-phone:focus{
+    color: var(--accent-color-blue);
+}
+.address-mail:hover,
+.address-mail:focus{
+    color: var(--accent-color-blue);
 }
 
 
@@ -228,7 +221,7 @@ footer{
 /* кнопки навігації */
 .portfolio .current {
     color: var(--color-white);
-    background-color: var(--accent-color-blue);  
+    background-color: var(--accent-color-blue);
 }
 
 .button-filter {
@@ -243,19 +236,19 @@ footer{
 }
 .button-filter:hover,
 .button-filter:focus {
-    color: var(--accent-color-blue);
+    color: var(--color-white);
+    background-color: var(--accent-color-blue);
 }
 
 .portfolio-title {
-    font-weight: 700;
     font-size: 18px;
-    line-height: 2.0;
+    line-height: 2;
     letter-spacing: 0.06em;
     
 }
 .portfolio-paragraph {
+    color: var(--paragraph-color-text);
+
     font-size: 16px;
     line-height: 1.88;
 }
-
-
